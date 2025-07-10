@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DemonGod YT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button class="toggle" onclick="toggleTheme()">🌙 Toggle</button>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="download.html">Download</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <header>
+    <h1>DemonGod YT</h1>
+    <p>Welcome To My Website Have Fun</p>
+  </header>
+
+  <section class="content" id="content">
+    <div class="card">
+      <h2>📺 Subscribe</h2>
+      <p>Support me on YouTube for more epic content!</p>
+      <a href="https://youtube.com/@DemonGod-3" target="_blank" class="yt-btn">DemonGod YT</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by DemonGod YT</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light');
+    }
+
+    const content = document.getElementById("content");
+
+    function createCard(title, desc) {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `<h2>${title}</h2><p>${desc}</p>`;
+      content.appendChild(card);
+    }
+
+    function loadMoreCards() {
+      for (let i = 0; i < 0; i++) {
+        createCard("🆕 Coming Soon", "New content will be added here...");
+      }
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      loadMoreCards();
+    });
+
+    window.addEventListener("scroll", () => {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+        loadMoreCards();
+      }
+    });
+  </script>
+</body>
+</html>
