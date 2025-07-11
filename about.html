@@ -8,27 +8,41 @@
 </head>
 <body>
   <nav class="navbar">
-    <a href="index.html">🏠 Home</a>
-    <a href="download.html">📥 Download</a>
-    <a href="about.html">ℹ️ About</a>
+    <a href="index.html"> Home</a>
+    <a href="download.html"> Download</a>
+    <a href="about.html"> About</a>
   </nav>
 
-  <header>
-    <h1>ℹ️ About DemonGod</h1>
-    <p>Get to know the creator behind the chaos 😈</p>
-  </header>
+<header class="hero">
+  <h1 class="rgb-text">About Me</h1>
+  <p>Get to know the creator behind the chaos 😈</p>
+</header>
+
 
   <section class="content">
     <div class="card">
       <h2>👑 Who am I?</h2>
-      <p>I’m DemonGod YT — content creator, modder, and web wizard!</p>
+      <p>I’m DemonGod YT — Content Creator, Modder,Gamer And Developer </p>
     </div>
+    
     <div class="card">
       <h2>📺 My YouTube</h2>
-      <p>Over [Your Subs] subscribers — thanks for the support!</p>
+      <p>Over 438 subscribers — thanks for the support!</p>
       <a href="https://youtube.com/@DemonGod-3" target="_blank" class="yt-btn">Visit Channel</a>
     </div>
+
+
   </section>
+<script>
+  document.addEventListener("click", function(e) {
+    const spark = document.createElement("div");
+    spark.className = "click-effect";
+    spark.style.left = `${e.clientX}px`;
+    spark.style.top = `${e.clientY}px`;
+    document.body.appendChild(spark);
+    setTimeout(() => spark.remove(), 600);
+  });
+</script>
 
   <footer>
     <p>Made with ❤️ by DemonGod YT | About the legend</p>

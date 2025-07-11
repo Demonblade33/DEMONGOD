@@ -8,23 +8,47 @@
 </head>
 <body>
   <nav class="navbar">
-    <a href="index.html">🏠 Home</a>
-    <a href="download.html">📥 Download</a>
-    <a href="about.html">ℹ️ About</a>
+    <a href="index.html">Home</a>
+    <a href="download.html"> Download</a>
+    <a href="about.html"> About</a>
   </nav>
 
-  <header>
-    <h1>📥 Downloads</h1>
-    <p>Get the latest files, tools & resources here</p>
-  </header>
+<header class="hero">
+  <h1 class="rgb-text">Downloads</h1>
+  <p >Get the latest files, tools & resources here</p>
+</header>
 
-  <section class="content">
-    <div class="card">
-      <h2>Mod Menu v1</h2>
-      <p>Click below to download:</p>
-      <a href="#" class="yt-btn">Download Now</a>
-    </div>
-  </section>
+
+<section class="downloads">
+  <div class="download-item">
+    <h2>GODKU PROJECT</h2>
+    <p>Click below to download:</p>
+    <a href="https://www.mediafire.com/file/vx13vfpvk1rx4nm/Godku_Project_Full_Version_6.4.0.apk/file" class="download-btn">Download Now</a>
+  </div>
+
+  <div class="download-item">
+    <h2>BLACKMOD</h2>
+    <p>Click below to download:</p>
+    <a href="#" class="download-btn">Download Now</a>
+  </div>
+
+  <div class="download-item">
+    <h2>PLANTINUM MOD</h2>
+    <p>Click below to download:</p>
+    <a href="#" class="download-btn">Download Now</a>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("click", function(e) {
+    const spark = document.createElement("div");
+    spark.className = "click-effect";
+    spark.style.left = `${e.clientX}px`;
+    spark.style.top = `${e.clientY}px`;
+    document.body.appendChild(spark);
+    setTimeout(() => spark.remove(), 600);
+  });
+</script>
 
   <footer>
     <p>Made with ❤️ by DemonGod YT | Downloads for fans</p>

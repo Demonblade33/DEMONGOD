@@ -15,28 +15,41 @@
     <a href="about.html">About</a>
   </nav>
 
-  <header>
-    <h1>DemonGod YT</h1>
-    <p>Welcome To My Website Have Fun</p>
-  </header>
+<header class="hero">
+  <h1 class="rgb-text">DemonGod YT</h1>
+  <p>Welcome To My Website Have Fun</p>
+</header>
 
-  <section class="content" id="content">
-    <div class="card">
-      <h2>📺 Subscribe</h2>
-      <p>Support me on YouTube for more epic content!</p>
-      <a href="https://youtube.com/@DemonGod-3" target="_blank" class="yt-btn">DemonGod YT</a>
-    </div>
-  </section>
+<section class="social-links">
+  <h2>🌐 Connect With Me</h2>
+  <p>Join my community across different platforms for updates, tools, and fun!</p>
+  <div class="social-buttons">
+    <a href="https://t.me/+7B5crjks9hFkYmY1" target="_blank" class="social-btn tg">Telegram</a>
+    <a href=" https://discord.gg/7W9fAEPnze" target="_blank" class="social-btn dc">Discord</a>
+  </div>
+</section>
+
 
   <footer>
     <p>Made with ❤️ by DemonGod YT</p>
   </footer>
 
   <script>
+
     function toggleTheme() {
       document.body.classList.toggle('light');
     }
 
+    document.addEventListener("click", function(e) {
+    const spark = document.createElement("div");
+    spark.className = "click-effect";
+    spark.style.left = `${e.clientX}px`;
+    spark.style.top = `${e.clientY}px`;
+    document.body.appendChild(spark);
+    setTimeout(() => spark.remove(), 600);
+
+    });
+    
     const content = document.getElementById("content");
 
     function createCard(title, desc) {
